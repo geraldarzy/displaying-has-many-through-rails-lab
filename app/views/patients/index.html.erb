@@ -1,0 +1,8 @@
+<h3>Here are all the patients:</h3>
+<ul>
+    <%@patients.each do |p|%>
+        <li>
+            Name: <%=p.name%> Number of Appointments: <%=p.appointments.all.count%>
+        </li>
+    <%end%>
+</ul>

@@ -1,0 +1,8 @@
+<h1>Appointment <%=@appointment.id%></h1>
+<br>
+<h3>Doctor: <%=link_to @appointment.doctor.name, doctor_path(@appointment.doctor)%></h3> 
+<h3>Patient: <%=link_to @appointment.patient.name, patient_path(@appointment.patient)%></h3> 
+<br>
+Time: <%=@appointment.appointment_datetime%>
+<br>
+March 15, 2016 , i dont know how to regex 2016-15-03 into March 15, 2016 off the top of my head
